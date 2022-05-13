@@ -84,7 +84,69 @@ for(let numero of numeros) {
 //5 */
 
 
-let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+ /* exemplo 2 */
+
+
+
+/* let names = ['João', 'Maria', 'Antônio', 'Margarida'];
 for (let nomes of names) {
     console.log(nomes)
+} */
+
+  /* exemplo 3 */
+/* 
+  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+  for (var index = 0; index < numbers.length; index +=1) {
+      console.log(numbers[index])
+  }
+ */
+        /* exemplo 3 somando total de um array  */  
+ 
+
+ /*  let soma = 0;
+  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+  for (let index = 0; index < numbers.length; index +=1) {
+     soma += numbers[index];
+  }
+  console.log(soma) */
+
+   /* exemplo 3 somando total de um array dividido pela média aritmética  */ 
+
+ /*  let soma = 0;
+  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+  for (let index = 0; index < numbers.length; index +=1) {
+     soma += numbers[index];
+  }
+  console.log(soma / 10) */
+
+ /* exemplo 4 somando total de um array de divido por 10 condição if */  
+
+
+/*   let soma = 0;
+  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+  for (let index = 0; index < numbers.length; index +=1) {
+     soma += numbers[index];
+  }
+  if (soma / 10 > 20) {
+    console.log("valor maior que 20")
+} else {
+    console.log("valor menor ou igual a 20") 
+}
+ */
+
+/* let soma = 0;
+  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+  for (let index = 0; index < numbers.length; index +=1) {
+    soma.push(numbers[index])
+  }
+console.log(soma) */
+
+ let nome = [12, 05, 09, 20, 40, 100]
+
+function sistema(nome) {
+    var resultado = [];
+    for ( var index = 0; index < nome.length; index++) {
+        resultado.push(nome[index]);
+    }
+    console.log(resultado)
 }
