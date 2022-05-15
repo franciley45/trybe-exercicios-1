@@ -100,7 +100,7 @@ for (let nomes of names) {
       console.log(numbers[index])
   }
  */
-        /* exemplo 3 somando total de um array  */  
+        /* exemplo 3 somando elementos de um array  */  
  
 
  /*  let soma = 0;
@@ -134,19 +134,63 @@ for (let nomes of names) {
 }
  */
 
-/* let soma = 0;
+
+  /* exemplo 5 for/if encontrado maior numero de uma arry */
+
+
+/*  let resultado = 0;
   let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-  for (let index = 0; index < numbers.length; index +=1) {
-    soma.push(numbers[index])
+ for ( var index = 0; index < numbers.length; index++) {
+  if (numbers[index] > resultado) {
+    resultado = numbers[index]
   }
-console.log(soma) */
-
- let nome = [12, 05, 09, 20, 40, 100]
-
-function sistema(nome) {
-    var resultado = [];
-    for ( var index = 0; index < nome.length; index++) {
-        resultado.push(nome[index]);
-    }
-    console.log(resultado)
 }
+console.log(resultado) */
+
+       
+ /* exemplo 6 for/if encontrado menor numero de uma arry */
+
+/* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let resultado = numbers[0];
+for ( let index = 1; index < numbers.length; index++) {
+if (numbers[index] < resultado) {
+  resultado = numbers[index]
+}
+}
+console.log(resultado) */
+
+
+  /* exemplo 6 for/if encontrado numeros par é imprimindo total */
+
+/*  let par = [];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for (var index = 0; index < numbers.length; index +=1) {
+   if ( numbers[index] % 2 === 0) {
+     par.push(numbers[index])
+   }  
+}
+console.log(par.length) */
+
+
+/* exemplo 7 for/if encontrado numeros impar é imprimindo total */
+
+
+/* let impar = [];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for (var index = 0; index < numbers.length; index +=1) {
+   if ( numbers[index] % 2 === 0) {
+     
+   }  else {
+    impar.push(numbers[index])
+   }
+}
+console.log(impar.length) */
+
+
+/* exemplo 8 for criando uma array apos imprimir o resultado */
+
+let numero = [];
+for (let index = 1; index <= 25; index += 1) {
+  numero.push([index])
+}
+console.log(numero)
