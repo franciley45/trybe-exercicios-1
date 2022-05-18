@@ -159,6 +159,17 @@ if (numbers[index] < resultado) {
 }
 console.log(resultado) */
 
+/* exemplo 6 for/if encontrado menor palavra de uma arry */
+
+/* let numbers = ["java", "javascript", "python", "html", "css"];
+let resultado = numbers[0];
+for ( let index = 1; index < numbers.length; index++) {
+if (numbers[index] < resultado) {
+  resultado = numbers[index]
+}
+}
+console.log(resultado) */
+
 
   /* exemplo 6 for/if encontrado numeros par é imprimindo total */
 
@@ -189,8 +200,32 @@ console.log(impar.length) */
 
 /* exemplo 8 for criando uma array apos imprimir o resultado */
 
-let numero = [];
+/* let numero = [];
 for (let index = 1; index <= 25; index += 1) {
-  numero.push([index])
+  numero.push(index)
 }
-console.log(numero)
+console.log(numero) */
+
+/* exemplo 8 dividindo array por 2 */
+
+
+/* let resultado = [];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for (let index = 0; index < numbers.length; index +=1) {
+  resultado += " "
+  resultado += numbers[index] / 2
+}
+console.log(resultado) */
+
+
+
+
+/* let word = 'tryber';
+ let resultado = [];
+for (var index = 6; index <= word.length -1; index -= 1 ) {
+    console.log(word[index])
+}
+
+console.log(resultado) */
+
+

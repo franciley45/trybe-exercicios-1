@@ -18,7 +18,7 @@ switch (trafficLight) {
 }
  */
 
- /* exercio 2 abaixo */
+ /* exercio 2  switch aprovado  */
 
 /* let candidata = "aprovada";
 switch (candidata) {
@@ -39,7 +39,7 @@ switch (candidata) {
 
 } */
 
- /* exercio 3 abaixo */
+ /* exercio 3 somando variaves */
 
 
 /* let a = 10;
@@ -60,7 +60,7 @@ console.log(divisao); */
 /* let modulo = a % b;
 console.log(modulo); */
 
- /* exercio 4 abaixo */
+ /* exercio 4 desconbrindo qual maior variavel */
 
 /* let valor1 = 89;
 let valor2 = 23;
@@ -70,7 +70,7 @@ if (valor1 > valor2) {
     console.log(valor2);
 } */
 
- /* exercio 5 abaixo */
+ /* exercio 5 descobrindo qual maior das 3 variaves */
 
 /*  let valor1 = 89;
  let valor2 = 23;
@@ -85,7 +85,7 @@ if (valor1 > valor2) {
  } */
 
 
- /* exercio 6 abaixo */
+ /* exercio 6 comprando variavel = 0 com 0 true ou fasel */
 
 
 /*  const definido = 0;
@@ -98,7 +98,7 @@ if (definido > 0) {
 } */
 
 
-/* exercio 7 abaixo */
+/* exercio 7 descobrindo se a soma das tres varias vai da valor de 180 */
 
 
 /* let angolo1 = 60;
@@ -137,15 +137,78 @@ if ( 180 === angolo1 + angolo2 + angolo3 ) {
 } */
 
 
-/* exercio 9 if ver qual das 3 variaveis é impar */
+/* exercio 9 if ver pelo menos uma das 3 variaveis é par retorno true */
 
 
-/* let numero1 = 10;
+/* let numero1 = 3;
 let numero2 = 3;
-let numero3 = 11;
+let numero3 = 3;
 
 if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0) {
     console.log(true)
 } else {
     console.log(false)
 } */
+
+/* exercio 10 if ver pelo menos uma das 3 variaveis é impar retorno true */
+
+
+/* let numero1 = 2;
+let numero2 = 7;
+let numero3 = 8;
+
+if (numero1 % 2 === 0 && numero2 % 2 === 0 && numero3 % 2 === 0) {
+    console.log(false)
+} else {
+    console.log(true)
+} */
+
+
+
+/* resultado = m / n * 80;
+console.log(resultado)
+
+var produtos = m * 1000
+console.log(produtos) */
+/* 0,2 */
+
+/* let valorDeVenda = 120;
+let custoDoProduto = 50;
+var resultado = 0;
+if (v) */
+
+  /* exercio 11 if porcentagem de 20% sobre custo do produto */
+
+
+/* const costOfProduct = 1;
+const saleValue = 3;
+
+if (costOfProduct >= 0 && saleValue >= 0) {
+  const totalCostOfProduct = costOfProduct * 1.2;
+  const totalProfit = (saleValue - totalCostOfProduct)
+  console.log(totalProfit);
+} else {
+  console.log("Error, os valores não podem ser negativos");
+}; */
+
+
+/* exercio 12 exmplo 2 if porcentagem de 20% sobre custo do produto */
+
+
+
+
+/* const venda = 3;
+const custo = 1;
+
+const custoTotal = 0.2 + custo;
+
+
+
+if (venda > 0 && custoTotal > 0) {
+    console.log((venda - custoTotal) * 1000);
+} else {
+    console.log("Valor inválido")
+}
+
+
+console.log(custoTotal) */
