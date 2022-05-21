@@ -135,17 +135,25 @@ for (let nomes of names) {
  */
 
 
-  /* exemplo 5 for/if encontrado maior numero de uma arry */
+  /* exemplo 5 for/if encontrado maior numero de uma arry juntando dentro de um novo array */
 
+  /* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 100, 27, 100, 100];
+  let resultado = numbers[0];
+  let sim2 = 0;
 
-/*  let resultado = 0;
-  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
- for ( var index = 0; index < numbers.length; index++) {
-  if (numbers[index] > resultado) {
-    resultado = numbers[index]
+  for ( let index = 0; index < numbers.length; index +=1) {
+    if (numbers[index] > resultado) {
+      resultado = numbers[index];
+      sim2 = 1
+    } else if ( resultado === numbers[index]) {
+      sim2 += 1
+    }
   }
-}
-console.log(resultado) */
+
+
+
+console.log(resultado)
+console.log(sim2) */
 
        
  /* exemplo 6 for/if encontrado menor numero de uma arry */
