@@ -1,8 +1,4 @@
-// function final(elementos, cor){
-//      document.querySelector(elementos).style.backgroundColor = cor;
-// }
 
-// final('#month', 'yellow');
 
 // let mes = document.getElementById('month');
 // mes.innerText = 'Caique';
@@ -85,7 +81,7 @@ function alteraCor(elementos, cor){
 
 
 let month = document.getElementById('month');
-console.log(month);
+/* console.log(month); */
 month.innerText = "franciley rodrigues do nascimento";
 month.style.background = "blue"
 
@@ -94,7 +90,7 @@ for (let index = 0; index < tags.length; index += 1) {
     tags[index].style.border = "solid black 4px";
 }
 let tagclass = document.getElementsByClassName("holiday");
-console.log(tagclass)
+/* console.log(tagclass) */
 for (let index = 0; index < tagclass.length; index +=1) {
     tagclass[index].style.color = "blue"
 }
@@ -104,3 +100,12 @@ let maria2totos = document.querySelectorAll(".holiday");
 for (let index = 0; index < maria2totos.length; index +=1) {
     maria2totos[index].style.backgroundColor = "green"
 }
+tagclass[1].innerText = "feriado!!";
+tagclass[1].style.color = "yellow";
+
+function final(elementos, cor){
+    document.querySelector(elementos).style.backgroundColor = cor;
+}
+
+ final('#days', 'yellow');
+
