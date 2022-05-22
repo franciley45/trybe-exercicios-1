@@ -12,3 +12,6 @@ document.getElementById("paragraph").innerText = "franciley rodrigues"
 
 document.getElementById("subtitle").innerText = "primeiros passos com DOM"
 
+document.getElementsByClassName("exercio2")[0].innerText = "franciley rodrigues do nascimento";
+
+document.getElementsByTagName("h4")[0].innerText ="FOI ?"
