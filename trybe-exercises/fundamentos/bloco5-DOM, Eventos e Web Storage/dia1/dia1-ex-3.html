@@ -59,24 +59,52 @@
  */
        function texto(elemento) {
        let primeiraTarefa = document.getElementsByTagName(elemento);
-       primeiraTarefa[1].innerText = "bem empregado é dominando com essência a linguagem javascript !"
+       primeiraTarefa[1].innerText = "Bem empregado é dominando com essência a linguagem JavaScript !"
       
        }
-      texto("p")
+      texto("p");
 
       /* let segundaTarefa = document.getElementsByClassName("main-content");
-      segundaTarefa[0].style.backgroundColor = "rgb(76,164,109)" */
+      segundaTarefa[0].style.backgroundColor = "rgb(76,164,109)"; */
 
       function segundaTarefa(elemento) {
         let segundaTarefa = document.getElementsByClassName(elemento);
         segundaTarefa[0].style.backgroundColor = "rgb(76,164,109)"
       }
-      segundaTarefa("main-content")
+      segundaTarefa("main-content");
+
+      /* let terceiraTarefa = document.querySelector(".main-content .center-content");
+      terceiraTarefa.style.backgroundColor = "white"; */
+
+      function terceiraTarefa(elemento1, elemento2) {
+        let terceiraTarefa = document.querySelector(elemento1, elemento2);
+      terceiraTarefa.style.backgroundColor = "white";
+      }
+      terceiraTarefa(".main-content .center-content");
+
+      /* let quartaTarefa = document.getElementsByTagName("h1");
+        quartaTarefa[0].innerText = "Exercício 5.1 - JavaScript"; */
+
+      function quartaTarefa(elemento) {
+        let quartaTarefa = document.getElementsByTagName(elemento);
+        quartaTarefa[0].innerText = "Exercício 5.1 - JavaScript";
+      }
+      quartaTarefa("h1");
+
+      function quintaTarefa(elemento) {
+        let quintaTarefa = document.querySelector(elemento);
+        quintaTarefa.innerText = ("Texto padrão do nosso site".toUpperCase());
+      }
+      quintaTarefa("p")
 
 
+     let sextaFarefa = document.querySelectorAll("p");
+     for (let index = 0; index < sextaFarefa.length; index += 1){
+      console.log(sextaFarefa[index].innerText);
+     }
+    
 
-
-
+     
 
 
     </script>

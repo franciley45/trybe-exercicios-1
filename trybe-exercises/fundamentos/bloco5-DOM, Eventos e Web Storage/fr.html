@@ -21,5 +21,34 @@
         </section>
       </main>
     <script src="cola.js"></script>
+
+    <!-- (1)  Acesse o elemento elementoOndeVoceEsta.
+        Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+ (2)  Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+ (3)  Acesse o primeiroFilho a partir de pai.
+    (4) Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+ (5)  Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+(6)   Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+  (7)  Agora acesse o terceiroFilho a partir de pai.
+ -->
+ <script>
+   let primeiro = document.getElementById("elementoOndeVoceEsta").parentNode.style.color = "red";
+
+
+    let segundo = document.querySelector(" #primeiroFilhoDoFilho").innerText = "Jesus o filho de Deus vivo";
+ 
+     let terceiro = document.getElementById("pai").firstElementChild ;
+
+     let quarto =  document.getElementById("elementoOndeVoceEsta").previousElementSibling ;
+
+     let quinto = document.querySelector("#elementoOndeVoceEsta").nextSibling ;
+
+    let sexto = document.querySelector("#elementoOndeVoceEsta").nextElementSibling ;
+
+    let setimo =  document.getElementById("pai").children[2] ;
+   
+
+    
+ </script>
 </body>
 </html>
