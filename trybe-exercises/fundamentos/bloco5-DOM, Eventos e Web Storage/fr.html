@@ -48,7 +48,50 @@
     let setimo =  document.getElementById("pai").children[2] ;
    
 
+   /*  Crie um irmão para elementoOndeVoceEsta.
+
+    Crie um filho para elementoOndeVoceEsta.
+
+    Crie um filho para primeiroFilhoDoFilho.
+
+    A partir desse filho criado, acesse terceiroFilho. */
+
+    let container =  document.querySelector("#elementoOndeVoceEsta").parentElement;
     
+
+    let newDiv =  document.createElement("div");
+    
+    container.appendChild(newDiv);
+
+    /* exercio 2 */
+
+    let matrix =  document.querySelector("#elementoOndeVoceEsta");
+
+    let criaFilho = document.createElement("div");
+
+    matrix.appendChild(criaFilho);
+
+    /* exercio3  */
+
+   let  mixto = document.querySelector("#primeiroFilhoDoFilho");
+
+   let filhoDoFilho =  document.createElement("div");
+
+      filhoDoFilho.className = "franciley"
+
+   mixto.appendChild(filhoDoFilho);
+
+     
+
+   /* exercio 4 */
+
+     let exercio4 = document.getElementsByTagName("div")[0].parentElement.parentElement.parentElement.children[2];
+
+
+
+
+   
+
  </script>
 </body>
 </html>
