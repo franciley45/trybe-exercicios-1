@@ -1,4 +1,4 @@
-document.getElementById("page-title").innerText = "PIRATAS DO CARABE"
+/* document.getElementById("page-title").innerText = "PIRATAS DO CARABE"
 
 let foi = document.getElementById("paragraph");
 
@@ -14,4 +14,6 @@ document.getElementById("subtitle").innerText = "primeiros passos com DOM"
 
 document.getElementsByClassName("exercio2")[0].innerText = "franciley rodrigues do nascimento";
 
-document.getElementsByTagName("h4")[0].innerText ="FOI ?"
+document.getElementsByTagName("h4")[0].innerText ="FOI ?" */
+
+console.log('alfabeto'.toUpperCase());
