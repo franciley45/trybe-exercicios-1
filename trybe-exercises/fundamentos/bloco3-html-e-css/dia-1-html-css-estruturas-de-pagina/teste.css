@@ -1,0 +1,17 @@
+
+
+.quadrado {
+    border:  2px solid black;
+    width:  100px;
+    height: 100px;
+    margin: 10px auto;
+}
+
+ #input-texto {
+    width: 80%;
+    line-height: 24px;
+}
+.flexy {
+    display: flex;
+    font-size: 20px;
+  }

@@ -17,21 +17,42 @@
 /* exercio 1 */
 const firstLi = document.getElementById('first-li');
 /* firstLi.className = "tech"; */
- firstLi.addEventListener("click", clik)
+ firstLi.addEventListener("dbclick", clik)
  function clik() {
     firstLi.className = "techfuuul"; 
  }
    
- firstLi.innerText = "Java Script";
+/*  firstLi.innerText = "Java Script";
 
  input.addEventListener("click", mudaTexto) {
     firstLi.innerText = "Java Script";
       }
-
+ */
 
    /* exercio 2  */
 const secondLi = document.getElementById('second-li');
 const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
+document
 
 const myWebpage = document.getElementById('my-spotrybefy');
+
+function mudacor() {
+   myWebpage.style.color = "red" ;
+}
+myWebpage.addEventListener("mouseover", mudacor)
+
+/* myWebpage.hrf = "https://github.com/franciley45" */
+
+function linkGitHub () {
+   myWebpage.hrf = "https://github.com/franciley45"
+}
+myWebpage.addEventListener("dbclick",linkGitHub)
+/* mudacor("red")
+myWebpage.innerText = "red" ; */
+
+ /*  let texte = document.getElementById("my-spotrybefy"); */
+
+ function mudartexto() {
+   firstLi.innerText = tex
+ }

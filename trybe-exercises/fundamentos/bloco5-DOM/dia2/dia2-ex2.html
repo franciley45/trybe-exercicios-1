@@ -55,7 +55,7 @@
       }
     </style>
   </head>
-  <img src="https://picsum.photos/200" alt="">
+  <!-- <img src="https://picsum.photos/200" alt=""> -->
   </i>
   <body>
     <script>
@@ -78,53 +78,72 @@
 
 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2. */
 
-        /* exercio 1 */
-    
-     let gol = document.querySelector("body");
-     let primeiro = document.createElement("h1");
-     gol.appendChild(primeiro);
-     primeiro.innerText ="Exercício 5.2";
+/* exercio 1 */
 
-        /* exercio 2 */
-     let segundo =  document.createElement("main");
-         segundo.className = "main-content";
-         gol.appendChild(segundo);
+let gol = document.querySelector("body");
+let primeiro = document.createElement("h1");
+gol.appendChild(primeiro);
+primeiro.innerText ="Exercício 5.2";
 
-         /* exercio 3 */
-          let terceiro = document.querySelector("main");
-          let quarto = document.createElement("section");
-           quarto.className = "center-content";
-           terceiro.appendChild(quarto)
+/* exercio 2 */
+let segundo =  document.createElement("main");
+segundo.className = "main-content";
+gol.appendChild(segundo);
 
-           /* exercio 4 */
-           let quinto =  document.getElementsByClassName("center-content");
-            
-            let filhoP = document.createElement("p");
+/* exercio 3 */
+let terceiro = document.querySelector("main");
+let quarto = document.createElement("section");
+  quarto.className = "center-content";
+  terceiro.appendChild(quarto)
 
-             quinto[0].appendChild(filhoP)
-              filhoP.innerText = "franciley rodrigues do nascimento"
+/* exercio 4 */
+let quinto =  document.getElementsByClassName("center-content");
 
-             /* exercio 5 */
-             let sexto = document.createElement("section");
-             sexto.className = "left-content";
-             terceiro.appendChild(sexto);
+let filhoP = document.createElement("p");
 
-             /* exercio 6 */
+quinto[0].appendChild(filhoP)
+filhoP.innerText = "franciley rodrigues do nascimento"
 
-             let setimo = document.createElement("section");
-              setimo.className ="right-content"
-             terceiro.appendChild(setimo);
-              
+/* exercio 5 */
+let sexto = document.createElement("section");
+sexto.className = "left-content";
+terceiro.appendChild(sexto);
 
-             /* exercio 7 */
+/* exercio 6 */
 
-             let oitavo = document.createElement("src");
-             oitavo.className = "small-image"
-             sexto.appendChild(oitavo);
-             oitavo.co
+let setimo = document.createElement("section");
+setimo.className ="right-content"
+terceiro.appendChild(setimo);
 
- 
 
-    </script>
+/* exercio 7 */
+
+let oitavo = document.createElement("img");
+oitavo.className = "small-image";
+oitavo.src = "https://picsum.photos/200"
+
+sexto.appendChild(oitavo);
+
+/* exercio 8 */
+let arryDeNumeros = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+for (let index = 0; index < arryDeNumeros.length; index += 1){
+  let lista = arryDeNumeros[index];
+  let listaDeNumeros = document.createElement("li");
+   listaDeNumeros.innerText = lista;
+   setimo.appendChild(listaDeNumeros);
+}
+ /* exercio 9 */
+ /* let arreyDaFe = ["Deus é maior do que tudo é todos", "Sua mizericordia não tem fim", "Gloria ao seu nome"]; */
+ for ( let index = 0; index < arreyDaFe.length; index += 1){
+    let caixa = arreyDaFe[index]
+   let listah3 = document.createElement("h3");
+   /* listah3.innerText = caixa; */
+   
+   segundo.appendChild(listah3)
+ }
+
+
+
+</script>
   </body>
 </html>

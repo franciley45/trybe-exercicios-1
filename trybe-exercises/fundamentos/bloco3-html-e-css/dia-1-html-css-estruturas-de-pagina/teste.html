@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franciley rodrigues</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+<h1>sdbjjkgjgj <input "type=text" id="input-texto"> gkkjgklgkjgkl</h1>
+<div class="quadrado"></div>
+</body>
+<script>
+    let pai = document.body;
+    pai.className = "flexy"
+
+
+    /* function criaDivClass() {
+        let novaDiv = document.createElement("div");
+        novaDiv.setAttribute("class", "quadrado");
+        pai.appendChild(novaDiv);
+    }
+    function criaH1Class() {
+        let novaH1 = document.createElement('h1');
+        novaH1.innerText = "EXERCIO DE EVENTOS";
+         novoIput = document.createElement("input");
+         novoIput.setAttribute("id", "input");
+         novoIput.setAttribute("type", "text");
+         novaH1.appendChild(novoIput);
+         pai.appendChild(novaH1);
+    }
+     function corQuadrado() {
+     novaDiv.style.backgroundColor = novoIput.value;
+     }
+     novoIput.addEventListener("change", corQuadrado);
+    
+     
+
+
+     criaH1Class()
+     criaDivClass() */
+
+     const inputTexto = document.querySelector("#input-texto");
+const divQuadrado = document.querySelector(".quadrado");
+
+function corQuadrado() {
+  divQuadrado.style.backgroundColor = inputTexto.value;
+}
+
+inputTexto.addEventListener("moseover", corQuadrado);
+     
+
+</script>
+</html>
