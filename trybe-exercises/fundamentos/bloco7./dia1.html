@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /* const testingScope = (escopo) => {
+        if (escopo === true) {
+          let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
+          ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
+          console.log(ifScope);
+        } else {
+          const elseScope = 'Não devo ser utilizada fora meu escopo (else)';
+          console.log(elseScope);
+        }
+    
+      }
+
+      testingScope(true); */
+
+    let Data = [13, 3, 4, 10, 7, 2];
+
+    Data.sort(function (a, b) {
+      return a - b;
+
+
+    });
+
+    var str = "";
+    for (let index = 0; index < Data.length; index +=1) {
+      str += Data[index] + ",";
+    }
+
+    console.log(str);
+    
+
+
+
+
+
+
+  </script>
+</html>
