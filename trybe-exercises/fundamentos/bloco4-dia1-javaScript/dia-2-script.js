@@ -112,12 +112,12 @@ for (let nomes of names) {
 
    /* exemplo 3 somando total de um array dividido pela média aritmética  */ 
 
- /*  let soma = 0;
+/*   let soma = 0;
   let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
   for (let index = 0; index < numbers.length; index +=1) {
      soma += numbers[index];
   }
-  console.log(soma / 10) */
+  console.log(soma ) */
 
  /* exemplo 4 somando total de um array de divido por 10 condição if */  
 
@@ -237,3 +237,77 @@ for (var index = 6; index <= word.length -1; index -= 1 ) {
 console.log(resultado) */
 
 
+/* exemplo 9 fazer porcentagem 
+
+ Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x.
+let preco = 60;
+let aVista = 54;
+let em3x = 20
+
+*/
+
+
+/* let preco = 100;
+let taixaDesconto = 10;
+let em3x = 0;
+let valorDavista = preco - ((taixaDesconto / 100) * preco);
+em3x = Math.round(preco / 3);
+console.log(`valor do produto = ${preco},00`)
+console.log(`valor do produto com desconto = ${valorDavista},00`)
+console.log(`valor do produto divido em 3x = ${em3x},00`) */
+
+
+/* exemplo 10 somandos valores de um array */
+
+/* let array = [1, 2, 3, 4, 5,];
+let resultado = 0;
+for( let index =0; index < array.length; index +=1) {
+  resultado += array[index]
+}
+console.log(resultado) */
+
+/* exemplo 11 encontrando uma posição no array */
+
+/* let array = [1, 2, 3, 4, 5,];
+let resultado = 0;
+for(index =0; index < array.length; index +=1) {
+  resultado = array[3]
+}
+
+console.log(resultado) */
+
+
+/* exemplo 12 vai pega o numeros da diagonal direita soma apos pega os numeros da diagonal esquerda tb soma apos diminui os valores entre se 
+[1, 2, 3] 
+[4, 5, 6]
+[7, 8, 9]
+*/
+
+/* function diagonalDiferente(arr) {
+  let linhas = 0;
+  let colunas = 0;
+ for(let index = 0; index < arr.length; index += 1) {
+  linhas += arr[index][index]
+  colunas += arr[index] [arr.length - 1 - [index]]
+
+ }
+  return Math.abs(linhas - colunas);
+}
+
+console.log(diagonalDiferente([[1, 2, 3], [4, 5, 6], [7, 8, 9]])); */
+
+
+/* exercio 13 linha é colunas de as asteriscos  */
+
+
+/* function piramende(n) {
+  let linhas = '';
+  let simbolo = '#';
+  for (let indexlinha = 0; indexlinha < n; indexlinha += 1) {
+      linhas += simbolo }
+      for(let index = 0; index < n; index += 1){
+        console.log(linhas)
+  }
+  console.log(linhas)
+}
+piramende(5) */
