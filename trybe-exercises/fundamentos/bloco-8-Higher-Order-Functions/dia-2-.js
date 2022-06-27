@@ -1,13 +1,13 @@
 //#### FOREACH ()
 
 const students = [
-    { name: 'Maria', grade: 70, approved: '' },
-    { name: 'José', grade: 56, approved: '' },
-    { name: 'Roberto', grade: 90, approved: '' },
-    { name: 'Ana', grade: 81, approved: '' },
-  ];
+  { name: 'Maria', grade: 70, approved: '' },
+  { name: 'José', grade: 56, approved: '' },
+  { name: 'Roberto', grade: 90, approved: '' },
+  { name: 'Ana', grade: 81, approved: '' },
+];
 
-  // exemplo 1  forEach() Para ser aprovado, ele precisa obter uma nota acima de 60 utilizando 
+// exemplo 1  forEach() Para ser aprovado, ele precisa obter uma nota acima de 60 utilizando 
 /*   const aprovadoReprovado = () => {
    students.forEach((elemento, index) => {
    if(elemento.grade > 60){
@@ -34,7 +34,7 @@ const encontadoDivisivel = numbers.find((element) => element % 5 === 0)
 console.log(encontadoDivisivel)
  */
 
- // exemplo 3 forEach() passando por elemento, index é array
+// exemplo 3 forEach() passando por elemento, index é array
 
 /* const arrayOfValues = ['josé', 50, 0.25, { comida: 'Chocolate' }];
 arrayOfValues.forEach((element, indexOfTheArray, theEntireArray) => {
@@ -43,7 +43,7 @@ arrayOfValues.forEach((element, indexOfTheArray, theEntireArray) => {
   console.log('Array percorrido:', theEntireArray);
 }); */
 
- // exemplo 4 forEach() NESSE CASO DA PARA V Q A FUNÇÃO FOI CRIADA FORA IMDEPEDENTE, APOS CHAMA O FOREACH É JOGA A FUNÇÃO DENTRO DO PARAMENTRO APROVEITANDO O TAMANHO DO ARRAY PARA EXECUÇÃO DA FUNÇÃO POR MESMO NUMERO DE VEZ DA QUANTIDA DE ELEMENTO DO ARRAY UM POUCO TONTO MAS VOU ACOMPANHA DEVAGA ESSES MOVIMENTOS DE MALABARISMO
+// exemplo 4 forEach() NESSE CASO DA PARA V Q A FUNÇÃO FOI CRIADA FORA IMDEPEDENTE, APOS CHAMA O FOREACH É JOGA A FUNÇÃO DENTRO DO PARAMENTRO APROVEITANDO O TAMANHO DO ARRAY PARA EXECUÇÃO DA FUNÇÃO POR MESMO NUMERO DE VEZ DA QUANTIDA DE ELEMENTO DO ARRAY UM POUCO TONTO MAS VOU ACOMPANHA DEVAGA ESSES MOVIMENTOS DE MALABARISMO
 
 /* const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -54,7 +54,7 @@ const multipliesFor2 = (element) => {
 numbers.forEach(multipliesFor2);
  */
 // exemplo 4 forEach() MAS UM EXEMPLO ABAIXO
- 
+
 /* const names = ['Bianca', 'Camila', 'Fernando', 'Ana Roberta'];
 
 const convertToUpperCase = (name, index) => {
@@ -78,7 +78,7 @@ console.log(names); // [ 'BIANCA', 'CAMILA', 'FERNANDO', 'ANA ROBERTA' ] */
   // Adicione seu código aqui
  emailListInData.forEach(showEmailList) */
 
- // EXEMPLO 5 EXERCICIO 1 - Use o método find() encontrando divisivel por 2 
+// EXEMPLO 5 EXERCICIO 1 - Use o método find() encontrando divisivel por 2 
 
 /*  const numbers = [19, 21, 30, 3, 45, 22, 15];
 
@@ -105,41 +105,42 @@ console.log(findDivisibleBy3And5()) */
 
 
 // EXEMPLO 5 EXERCICIO 2 Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
-/* 
-const names = ['João', 'Irene', 'Fernando', 'Maria'];
+
+/* const names = ['João', 'Irene', 'Fernando', 'Maria'];
 
 const findNameWithFiveLetters = () => {
   // Adicione seu código aqui:
   return names.find((element) => element.length === 5)
 }
 console.log(findNameWithFiveLetters()); */
- 
-// exemplo 6 exercicio 3 Utilize o find para encontrar a música com id igual a 31031685, caso ela exista:
+
+// exemplo 6 exercio 3 Utilize o find para encontrar a música com id igual a 31031685, caso ela exista:
 
 /* const musicas = [
   { id: '31031685', title: 'Partita in C moll BWV 997' },
   { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
   { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
 ]
+
 function findMusic(id) {
   // Adicione seu código aqui
-  return musicas.find((element) => element.id === id)
+ return musicas.find(element => element.id === id)
 }
-console.log(findMusic('31031685')) */
 
-// exemplo 7 some() verificar se possui algum nome que começa com a letra desejada:
+console.log(findMusic('31031685'))
+ */
+// exemplo 7 exercio 4 para verificar se possui algum nome que começa com a letra desejada:
+
 /* const listNames = ['Maria', 'Manuela', 'Jorge', 'Ricardo', 'Wilson'];
 
-const verifyFirstLetter = (letter, names) => {
- return names.some((name) => name[0] === letter)
-};
+const verifyFirstLetter = (letter, names) => names.some((name) => name[0] === letter);
 
 console.log(verifyFirstLetter('J', listNames)); // true
 console.log(verifyFirstLetter('x', listNames)); // false */
 
- // exemplo 7 every() ######## Object.values abaixo ########### abaixo usará o every para verificar se o estudante passou em todas as matérias:
+/* #######exemplo 7  MUITO IMPORTATE COMO PERCORE OBJETOS EM FORMA DE ARRAy */
 
-/*  const grades = {
+/* const grades = {
   portugues: 'Aprovado',
   matematica: 'Reprovado',
   ingles: 'Aprovado',
@@ -150,21 +151,20 @@ const verifyGrades = (studentGrades) => (
 );
 
 console.log(verifyGrades(grades)); */
+//  exemplo 8 soma() - Escreva uma função que dado um array de nomes e um nome retorne true se ele estiver contido e caso contrário, retorne false, use some;
 
- // exemplo 8  some () Escreva uma função que dado um array de nomes e um nome retorne true se ele estiver contido e caso contrário, retorne false, use some;
+/* const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
 
-/*  const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+const hasName = (arr, name) => {
+  //Adicione seu código aqui
+  return arr.some((element) => element === name)
+}
 
- const hasName = (arr, name) => {
-   //Adicione seu código aqui
-   return arr.some((elemento) => elemento === name) 
- }
- 
- console.log(hasName(names, 'Ana')) */
+console.log(hasName(names, 'Ana')) */
 
- // exemplo 9 every() Escreva uma função que dado um array de pessoas e uma idade mínima retorne true se todas tiverem a idade maior ou igual a mínima e caso contrário false, use every;
-
- /* const people = [
+// exemplo 9 every() - Escreva uma função que dado um array de pessoas e uma idade mínima retorne true se todas tiverem a idade maior ou igual a mínima e caso contrário false, use every;
+/* 
+const people = [
   { name: 'Mateus', age: 18 },
   { name: 'José', age: 16 },
   { name: 'Ana', age: 23 },
@@ -174,14 +174,19 @@ console.log(verifyGrades(grades)); */
 
 const verifyAges = (arr, minimumAge) => {
   //Adicione seu código aqui
- return arr.every((element) => element.age >= 18)
+  return arr.every((element) => element.age >= minimumAge)
 }
 
-console.log(verifyAges(people, 18)); */
+console.log(verifyAges(people, 15)); */
 
- // exemplo 10 sort() Utilize a sort para ordenar o array pela idade das pessoas em ordem crescente.
+// exemplo 10 usando o sort()
 
-/*  const people = [
+/* const food = ['arroz', 'feijão', 'farofa', 'chocolate', 'doce de leite'];
+food.sort();
+console.log(food);
+// [ 'arroz', 'chocolate', 'doce de leite', 'farofa', 'feijão' ]
+
+const people = [
   { name: 'Mateus', age: 18 },
   { name: 'José', age: 16 },
   { name: 'Ana', age: 23 },
@@ -190,10 +195,8 @@ console.log(verifyAges(people, 18)); */
 ];
 
 // Adicione se código aqui
-people.sort((a, b) => a.age - b.age)
-console.log(people);
- */
-
+people.sort((a,b) => a.age - b.age)
+console.log(people); */
 
 const books = [
   {
@@ -260,63 +263,77 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
+// exemplo 11 🚀 1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
 
-// exemplo 11 find() exercicio 🚀 1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
+/* function authorBornIn1947() {
+  // escreva aqui o seu código
+   return  books.find((element) => element.author.birthYear === 1947).author.name;
+}
+console.log(authorBornIn1947()) */
 
-/* const nascidoEm1947 = books.find((element) => element.author.birthYear === 1947).author.name
-console.log(nascidoEm1947) */
+// exemplo 11 forEach() 2 - Retorne o nome do livro de menor nome.
 
-// exemplo 12 🚀  2 - Retorne o nome do livro de menor nome.
 
 /* function smallerName() {
   let nameBook;
-  // escreva aqui o seu código
-  books.forEach((element) => {
-    if(!nameBook || element.name.length < nameBook.length) {
-      nameBook = element.name
+  books.forEach((book) => {
+    if (!nameBook || book.name.length < nameBook.length ) {
+      nameBook = book.name;
     }
-  })
+  });
   // Variável nameBook que receberá o valor do menor nome;
   return nameBook;
 }
-console.log(smallerName()) */
+ console.log(smallerName()) */
 
-// exemplo 13 find() 🚀 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
 
-/* function getNamedBook() {
+// exemplo 12 find() 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
+
+/* const expectedResult = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin',
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991,
+};
+
+function getNamedBook() {
   // escreva seu código aqui
-  return  books.find((elemento) => elemento.name.length === 26)
+  return books.find((element) => element.name.length === 26)
 }
 console.log(getNamedBook()) */
 
-// exemplo 14 sort() exercicio 🚀 4 Ordene os livros por data de lançamento em ordem decrescente.
+// exemplo 13  4 - Ordene os livros por data de lançamento em ordem decrescente.
 
-/* const ordenadoPorData = books.sort((a, b) => (b.releaseYear - a.releaseYear))
-console.log(ordenadoPorData) */
-
-// exemplo 15 every 🚀 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
-
-/* function everyoneWasBornOnSecXX() {
-  // escreva seu código aqui
-  return books.every((element) => element.author.birthYear > 1900 && element.author.birthYear <= 2000)
+/* function booksOrderedByReleaseYearDesc() {
+  // escreva aqui seu código
+    return books.sort((a, b) => b.releaseYear - a.releaseYear)
 }
 
-console.log(everyoneWasBornOnSecXX()) */
+console.log(booksOrderedByReleaseYearDesc()) */
 
-// exemplo 16 🚀 6 - Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
-/* 
-function someBookWasReleaseOnThe80s() {
+// exemplo 14 every ()🚀 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
+
+/* const anodeNascimento = books.every((element) =>(element.author.birthYear > 1900 && element.author.birthYear <= 2000))
+console.log(anodeNascimento) */
+
+// exemplo 14  soma() 🚀 6 - Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false
+
+/* function someBookWasReleaseOnThe80s() {
   // escreva seu código aqui
-  return books.some((element) => element.releaseYear >= 1980 && element.releaseYear <= 1989)
+  return books.some((element) => element.releaseYear >= 1980 && element.releaseYear < 1989)
 }
 console.log(someBookWasReleaseOnThe80s()) */
 
-// exemplo 17 🚀 7 - Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
+// exemplo 15 7 - Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
+
+const expectedResult = false;
 
 function authorUnique() {
-  return books.every((book) =>
-    !books.some((bookSome) =>
-      (bookSome.author.birthYear === book.author.birthYear)
-      && (bookSome.author.name !== book.author.name)));
+  // escreva seu código aqui
+  
+  return books.every((element) => element.author.birthYear)
 }
-console.log(authorUnique())
