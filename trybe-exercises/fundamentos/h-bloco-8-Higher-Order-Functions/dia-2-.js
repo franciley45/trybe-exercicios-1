@@ -8,7 +8,7 @@ const students = [
   ];
 
   // exemplo 1  forEach() Para ser aprovado, ele precisa obter uma nota acima de 60 utilizando 
-/*   const aprovadoReprovado = () => {
+  const aprovadoReprovado = () => {
    students.forEach((elemento, index) => {
    if(elemento.grade > 60){
     students[index].approved = 'Aprovado'
@@ -18,7 +18,7 @@ const students = [
 });
 }
 aprovadoReprovado()
-console.log(students) */
+console.log(students)
 
 // abaixo utilizando operador ternário
 
@@ -313,10 +313,10 @@ console.log(someBookWasReleaseOnThe80s()) */
 
 // exemplo 17 🚀 7 - Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
 
-function authorUnique() {
+/* function authorUnique() {
   return books.every((book) =>
     !books.some((bookSome) =>
       (bookSome.author.birthYear === book.author.birthYear)
       && (bookSome.author.name !== book.author.name)));
 }
-console.log(authorUnique())
+console.log(authorUnique()) */
