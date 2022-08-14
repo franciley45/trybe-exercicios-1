@@ -1,5 +1,11 @@
+body {
+  background-color: #3e4e6e;
+}
+
 .App {
   text-align: center;
+  color: white;
+  font-size: 15px;
 }
 
 div {
