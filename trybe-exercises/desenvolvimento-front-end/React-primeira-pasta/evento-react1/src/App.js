@@ -3,7 +3,7 @@ import './App.css';
 
 function btn() {
   console.log('deu certo')
-} g
+} 
 
 class App extends React.Component {
   render() {

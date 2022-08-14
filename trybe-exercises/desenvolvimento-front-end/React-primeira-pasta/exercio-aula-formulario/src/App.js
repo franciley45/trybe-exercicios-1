@@ -11,7 +11,7 @@ class App extends React.Component {
             <input type='text' className='form-control' name='name' id='nome' ></input>
           </div>
           <div>
-            <label htmlFor='email' className='form-label' >Email</label>
+            <label htmlFor='email' className='form-label' >Email <br></br> Coloque aqui o email que você utilizou no Processo Seletivo da Trybe</label>
             <input type='text' className='form-control' name='email' id='email' ></input>
           </div>
           <div>
@@ -56,7 +56,13 @@ class App extends React.Component {
             <label htmlFor='cargo' className='form-label'>Cargo</label>
             <textarea id='cargo' className='form-control'></textarea>
           </div>
-
+           <br></br>
+           <br></br>
+          <div>
+            <button class="btn btn-outline-primary">Enviar Docmentos</button>
+          </div>
+          <br></br>
+           <br></br>
         </fieldset>
 
       </div>
