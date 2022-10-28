@@ -35,7 +35,9 @@ class LoginForm extends React.Component {
     return (
       <section>
         <form onSubmit={this.hadleSubmit}>
-            <h2>Login<h2/>
+            <h2>
+              Login
+              <h2/>
             <EmailInput 
              email={ email } 
               handleChange={this.handleChange}/>

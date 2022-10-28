@@ -7,7 +7,7 @@ class VideoGame extends React.Component {
         const { gamey } = this.props;
         const { img, developer, title } = gamey
 
-
+console.log(gamey)
         return (
             <section className="card">
                 < img src={img} alt={title} />
